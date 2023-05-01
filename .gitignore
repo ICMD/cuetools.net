@@ -1,3 +1,4 @@
+.DS_Store
 .vs/
 obj/
 bin/
@@ -20,3 +21,5 @@ launchSettings.json
 /ThirdParty/*/wavpackdll.*
 /ThirdParty/*/libwavpack.*
 /ThirdPartyDebug/
+/ThirdParty/MAC_SDK
+/Tonal/publish

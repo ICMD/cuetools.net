@@ -32,6 +32,7 @@ namespace CUETools.Processor
             //string arch = asi.ApplicationId.ProcessorArchitecture;
             //ActivationContext is null most of the time :(
 
+            return;
             string plugins_path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "plugins");
             if (Directory.Exists(plugins_path))
             {

@@ -1380,7 +1380,7 @@ index 9e5c00b..4ef6fc5 100644
  		///    Gets and sets a collection of pictures associated with
  		///    the media represented by the current instance.
 diff --git a/src/TaglibSharp/TaglibSharp.csproj b/src/TaglibSharp/TaglibSharp.csproj
-index 88ac00d..aec9676 100644
+index 23bdd8e..55afb91 100644
 --- a/src/TaglibSharp/TaglibSharp.csproj
 +++ b/src/TaglibSharp/TaglibSharp.csproj
 @@ -1,6 +1,8 @@
@@ -1388,10 +1388,19 @@ index 88ac00d..aec9676 100644
  
    <PropertyGroup>
 +    <ReleaseVersion>2.3.0.0</ReleaseVersion> <!-- From Directory.Build.props -->
-+    <LibTargetFrameworks>net47;netstandard2.0</LibTargetFrameworks> <!-- From Directory.Build.props -->
++    <LibTargetFrameworks>net7.0</LibTargetFrameworks> <!-- From Directory.Build.props -->
      <TargetFrameworks>$(LibTargetFrameworks)</TargetFrameworks>
      <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\TaglibSharp.xml</DocumentationFile>
      <AssemblyName>TagLibSharp</AssemblyName>
+@@ -9,7 +11,7 @@
+     <SignAssembly>true</SignAssembly>
+     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
++    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+     <IncludeSymbols>true</IncludeSymbols>
+     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+   </PropertyGroup>
 diff --git a/src/TaglibSharp/WavPack/File.cs b/src/TaglibSharp/WavPack/File.cs
 index 54df146..96220e9 100644
 --- a/src/TaglibSharp/WavPack/File.cs

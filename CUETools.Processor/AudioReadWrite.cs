@@ -66,7 +66,7 @@ namespace CUETools.Processor
             object o;
             try
             {
-                o = Activator.CreateInstance(settings.EncoderType, settings, path, null);
+                o = Activator.CreateInstance(typeof(CUETools.Codecs.WAV.AudioEncoder), settings, path, null);
             }
             catch (System.Reflection.TargetInvocationException ex)
             {

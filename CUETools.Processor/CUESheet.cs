@@ -1790,7 +1790,7 @@ namespace CUETools.Processor
                 }
             }
 
-            LoadAlbumArt(_tracks[0]._fileInfo ?? _fileInfo);
+            // LoadAlbumArt(_tracks[0]._fileInfo ?? _fileInfo);
 
             if (_config.embedLog && _eacLog != null)
                 _padding += _eacLog.Length;
@@ -2820,7 +2820,7 @@ namespace CUETools.Processor
 
                 if (OutputStyle == CUEStyle.SingleFileWithCUE || OutputStyle == CUEStyle.SingleFile)
                 {
-                    if (_audioEncoderType != AudioEncoderType.NoAudio)
+                    if (false) // (_audioEncoderType != AudioEncoderType.NoAudio)
                     {
                         NameValueCollection tags = GenerateAlbumTags(bestOffset, OutputStyle == CUEStyle.SingleFileWithCUE, _ripperLog ?? _eacLog);
                         TagLib.UserDefined.AdditionalFileTypes.Config = _config.advanced;
